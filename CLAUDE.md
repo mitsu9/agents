@@ -19,6 +19,7 @@
 - `/planner` — プランナーモード。計画サイクルのオペレーション
 - `/researcher` — リサーチャーモード。正確に情報を集め構造化する
 - `/executor` — エグゼキューターモード。タスクを引き取り成果物を作る
+- `/os-improve` — OS改善モード。改善シグナルを拾い実行する
 
 切替時は対応する `agents/{name}.md` を読み込み、そのモードでセッションを継続する。
 
@@ -38,6 +39,53 @@
 - その他、システム全体の改善につながる気づき
 
 記録は簡潔に。日付と内容が分かればいい。
+
+## スキル
+
+`skills/` にスキル定義を配置。スキルはエージェントのセッション中に呼び出される思考支援ツール。
+
+### スキル一覧
+
+**オペレーション系:**
+- daily — 朝の立ち上げ（デイリーノート確認・MIT決定）
+- daily-review — 終業振り返り（翌日デイリーノート作成）
+- advise — 戦略レビュー（ギャップ分析・提案生成）
+- rebalance — プロジェクトポートフォリオ棚卸し
+
+**計画系:**
+- plan-week — 週次計画
+- plan-month — 月次目標設定
+- plan-half-year — 半期目標設定
+- plan-1on1 — 1on1準備（アジェンダ・トーキングポイント）
+- plan-meeting — 会議アジェンダ設計
+
+**思考系:**
+- think-communicate — コミュニケーション設計
+- think-goal — 目標設定・計画立案
+- think-hr — 人事評価検討
+- think-report — 思考プロセスレポート
+
+**記録・実行系:**
+- adr — 決定事項のADR記録（決定後の記録に特化）
+- memo — クイックメモ
+- project — 新規プロジェクト作成
+
+**情報収集系:**
+- activity-summary — 日次活動サマリー
+- eval-comment — 評価コメント生成
+- github-member-activity-summary — メンバーGitHub活動分析
+- slack-unreplied — 未返信Slackメンション一覧
+- slide — Marpスライド生成
+
+### 関連リソース
+
+- `frameworks/` — 思考フレームワーク（27個）
+- `templates/` — セッション出力テンプレート（15個）
+- `personas/` — ペルソナ定義（4個: business-owner, team-member, end-user, strategic-director）
+
+### データキー記法
+
+スキル内の `{key}` 表記は `context/sources.md` のデータキーに対応する実パスに解決する。
 
 ## マークダウンの書式ルール
 
