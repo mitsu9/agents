@@ -1,0 +1,6 @@
+.claude/settings.local.json
+
+# 個人コンテキスト（パス・リポジトリ名・個人情報を含むため非公開）
+context/*
+!context/README.md
+
