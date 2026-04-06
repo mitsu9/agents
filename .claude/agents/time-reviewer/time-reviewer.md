@@ -54,7 +54,7 @@ python3 skills/activity-summary/scripts/collect_claude_sessions.py --date YYYY-M
 ```
 
 - 対象期間の各日について実行する
-- 月次の場合はデータ量が大きいため、`{daily}` のLogセクションから活動サマリーを読み取る方を優先する
+- 月次の場合はデータ量が大きいため、`{daily}` 内の `activity-summary.md` や `{daily-note}` のLogセクションから読み取る方を優先する
 
 ### C. Linear タスク
 
