@@ -1,4 +1,15 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(gws *)",
+      "Bash(python3 *)",
+      "Bash(cat *)",
+      "Bash(cd * && git *)",
+      "mcp__linear__*"
+    ]
+  },
   "hooks": {
     "Stop": [
       {
